@@ -48,7 +48,6 @@ But we included the library that contains printf, so why does the error persist?
 
 ## The Main Function
 
-
 Every C program needs a main function (main) to run. This function indicates the entry point of the program. Since we want our printf to appear when the program runs, we need to declare it inside the main function. But how do we declare this function?
 
 C has standardized the way we declare the main function. We simply write:
@@ -81,7 +80,7 @@ A Small Detail About Output Formatting
 The percentage sign that appeared at the end of the phrase indicates that the string (the text we passed to printf) has ended. Since our instruction did not include a line break, the terminal inserted one automatically. However, this is not the standard behavior of the program.
 
 By default, the line does not break. To ensure that our program always ends the message with a new line, we need to modify our printf statement to include \n:
-
+```c
 #include <stdio.h>
 
 int main() {
@@ -89,19 +88,21 @@ int main() {
     printf("Hello, Alura!\n");
 
 }
+```
 When we compile and run the file again, we’ll see that the percentage sign disappears because the new line is now explicitly defined.
 
 Customizing the Output File Name
 In these examples, the compiler automatically assigns a name to our output file. But if we want, we can specify a name for the compiled file. To do this, we use the -o flag in GCC, followed by the desired output file name:
 
-gcc hello-world.c -o hello-world.out
+`gcc hello-world.c -o hello-world.out`
+
 Understanding the int main() Return Value
 One thing we need to pay attention to is the int keyword before the main function. This indicates the return type of the function. In other words, when we write int main(), we are saying that our function returns an integer number. But where do we specify this return value?
 
 In some compilers, if we compile our code without a return value, we might get a warning saying that main does not return a value. This would not prevent the program from running, but it is not considered good practice.
 
 By convention, the return value 0 indicates that the program executed successfully. So, we should explicitly tell main to return 0 at the end of execution:
-
+```c
 #include <stdio.h>
 
 int main() {
@@ -110,8 +111,8 @@ int main() {
 
     return 0;
 }
-
-Conclusion
+```
+## Conclusion
 C is still one of the most widely used programming languages today. It has very high processing power and serves as the foundation for many modern programming languages.
 
 At Alura, we offer three courses on C programming, each designed to help you learn the language through game development.
