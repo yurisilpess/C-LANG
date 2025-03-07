@@ -1,11 +1,4 @@
-# Lesson 1
-When we start studying programming, we come across various programming languages. Which one should we learn first?
-
-Regardless of the programming language, they all have at least one thing in common: logic. It doesn’t matter which language we choose to start with; the logic behind it will be the same. Of course, the steps to perform tasks may differ, as each language has its own syntax.
-
-Among the many programming languages, one very popular language is C.
-
-## The C Language
+# The C Language
 C is one of the most widely used languages today and has served as the foundation for several other languages, such as C++, C#, Java, PHP, JavaScript, and many others. But how can we write a program in C?
 
 Hello, World! And a Few More Things
@@ -48,7 +41,9 @@ But we included the library that contains printf, so why does the error persist?
 
 ## The Main Function
 
-Every C program needs a main function (main) to run. This function indicates the entry point of the program. Since we want our printf to appear when the program runs, we need to declare it inside the main function. But how do we declare this function?
+### Every C program needs a main function (main) to run. This function indicates the entry point of the program. 
+
+Since we want our printf to appear when the program runs, we need to declare it inside the main function. But how do we declare this function?
 
 C has standardized the way we declare the main function. We simply write:
 ```c
@@ -64,9 +59,10 @@ int main() {
 
 }
 ```
-Now, we can ask GCC to compile our file without getting an error!
+Now, we can ask GCC or Clang to compile our file without getting an error!
 
-Running the Program
+## Running the Program
+
 Nice, our file is compiled! Now, how do we run it?
 
 Since we only asked GCC to compile the file, it automatically assigned a name to the compiled file. In my case, this name is a.out.
